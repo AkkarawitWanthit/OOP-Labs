@@ -1,10 +1,11 @@
 package project;
 
 public abstract class Tour {
-    protected  String id;
-    protected  String name;
-    protected   double price;
+    protected String id;
+    protected String name;
+    protected double price;
     protected int seat;
+    protected String transport;
 
     public Tour(String id, String name, double price, int seat){
         this.name = name;
@@ -19,6 +20,10 @@ public abstract class Tour {
 
     public double getPrice (){
         return price;
+    }
+
+    public String getName(){
+        return name;
     }
 
     public boolean book(int people){

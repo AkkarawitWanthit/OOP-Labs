@@ -1,12 +1,31 @@
 package project;
 
-public class DomesticTour extends Tour {
+public final class DomesticTour extends Tour {
+    protected String transport;
+
+    public DomesticTour(String id , String name ,double price , int seat , String transport){
+        super(id, name, price, seat);
+        this.transport = transport;
+    }
+    
     public DomesticTour(String id , String name ,double price , int seat){
         super(id, name, price, seat);
+        this.transport = "Van";
     }
 
-    @Override 
+    public String getTransport(){
+        return transport;
+    }
+
+    public void setTransport(String transport){
+        this.transport = transport;
+    }
+    
     public double calculatePrice(){
-        return calculatePrice();
+        return getPrice();
+    }
+
+    public String getInfo(){
+        return super.getInfo()+" | Demestic by "+transport; 
     }
 }
