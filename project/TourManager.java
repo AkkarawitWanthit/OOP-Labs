@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class TourManager {
-    protected List<Tour> tours = new ArrayList<>();
+    private List<Tour> tours = new ArrayList<>();
 
     public  void addTour(Tour t){
         tours.add(t);

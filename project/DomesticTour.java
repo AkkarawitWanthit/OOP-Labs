@@ -1,9 +1,9 @@
 package project;
 
 public final class DomesticTour extends Tour {
-    protected String transport;
+    private String transport;
 
-    public DomesticTour(String id , String name ,double price , int seat , String transport){
+    public DomesticTour(String id , String name ,double price , int seat , String transport ){
         super(id, name, price, seat);
         this.transport = transport;
     }

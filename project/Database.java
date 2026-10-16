@@ -1,8 +1,5 @@
 package project;
 
-import java.awt.List;
-import java.util.ArrayList;
-
 public class Database {
     public static TourManager manager = new TourManager();
 

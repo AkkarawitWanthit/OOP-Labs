@@ -1,16 +1,27 @@
 package project;
 
 public abstract class Tour {
-    protected String id;
-    protected String name;
-    protected double price;
-    protected int seat;
-    protected String transport;
+    private String id;
+    private String name;
+    private double price;
+    private int seat;
 
     public Tour(String id, String name, double price, int seat){
         this.name = name;
         this.id = id;
         this.price = price;
+        this.seat = seat;
+    }
+
+    public void setID(String id){
+        this.id = id;
+    }
+    
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    public void setSeat(int seat ){
         this.seat = seat;
     }
 

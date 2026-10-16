@@ -1,7 +1,7 @@
 package project;
 
 public final class InternationalTour extends Tour {
-    protected double visaFee;
+    private double visaFee;
 
     public InternationalTour (String id , String name , double price , int seat , double visaFee){
         super(id, name, price, seat);
