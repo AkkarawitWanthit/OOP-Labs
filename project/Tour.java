@@ -16,13 +16,17 @@ public abstract class Tour {
     public void setID(String id){
         this.id = id;
     }
-    
+
     public void setPrice(double price){
         this.price = price;
     }
 
     public void setSeat(int seat ){
         this.seat = seat;
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 
     public String getID(){
@@ -35,6 +39,10 @@ public abstract class Tour {
 
     public String getName(){
         return name;
+    }
+
+    public int getSeat(){
+        return seat;
     }
 
     public boolean book(int people){
